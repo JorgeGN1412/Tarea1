@@ -143,3 +143,32 @@ mantener consistencia entre componentes y modificar el diseño completo
 cambiando un solo valor, sin buscar y reemplazar colores o medidas repetidas
 por todo el CSS.
 
+## Resumen de commits
+
+Tabla generada con `git log --date=short --pretty=format:"| %ad | %h | %s |"`
+y completada con las columnas de caso y cambio principal.
+
+> **Nota:** el último commit del repositorio es el que agrega esta tabla al
+> README. Su hash no existe hasta que se crea el commit, por lo que ese commit
+> no aparece como fila; `git log` muestra un commit más que esta tabla.
+
+| # | Fecha | Hash | Mensaje | Caso | Cambio |
+|---|-------|------|---------|------|--------|
+| 1 | 2026-09-20 | 7ea096a | Crear estructura de carpetas y README inicial | Ambos | Carpetas caso1 y caso2; identificación, descripción e instrucciones en el README |
+| 2 | 2026-09-20 | 8d743cd | Caso 1: esqueleto HTML semántico con header, nav, main y footer | Caso 1 | Estructura semántica base y navegación con las cinco opciones |
+| 3 | 2026-09-20 | fd872b3 | Caso 1: variables CSS, reset y estilos base mobile-first | Caso 1 | Variables en :root, box-sizing global y tipografía base |
+| 4 | 2026-09-20 | bbafd0b | Caso 1: cabecera sticky y navegación con Flexbox | Caso 1 | position: sticky en la cabecera y nav flex que envuelve; estilo del pie |
+| 5 | 2026-09-20 | 98ab07d | Caso 1: resumen de operaciones y misiones activas | Caso 1 | Indicadores con Flexbox y cinco misiones con estados y etiqueta de prioridad absolute |
+| 6 | 2026-09-20 | 77b11df | Caso 1: equipos científicos y alertas con jerarquía visual | Caso 1 | Cuatro equipos y cuatro alertas con niveles de importancia diferenciados |
+| 7 | 2026-09-20 | 661e1cf | Caso 1: agenda de próximas actividades | Caso 1 | Lista ordenada cronológicamente con hora, actividad y equipo |
+| 8 | 2026-09-20 | e9d754a | Caso 1: media query de tableta con dos columnas | Caso 1 | min-width: 601px ajusta los indicadores y coloca los equipos en dos columnas |
+| 9 | 2026-09-20 | 4965eb8 | Caso 1: CSS Grid con zonas simultáneas para escritorio | Caso 1 | min-width: 1024px con grid-template-areas para ver todo el panel a la vez |
+| 10 | 2026-09-20 | b9cdd65 | Caso 2: esqueleto HTML semántico del panel del festival | Caso 2 | Header, nav con cinco opciones, main y footer |
+| 11 | 2026-09-20 | e6b4c24 | Caso 2: variables CSS, base mobile-first, encabezado y nav sticky | Caso 2 | Variables, nav flex con position: sticky en teléfono y panel de una columna |
+| 12 | 2026-09-20 | 6ec0fd1 | Caso 2: secciones Ahora y próximas actividades | Caso 2 | Tres actividades en curso con etiqueta absolute y seis próximas actividades |
+| 13 | 2026-09-20 | e758182 | Caso 2: programación por escenarios | Caso 2 | Cuatro escenarios apilados en teléfono, base para el Grid de escritorio |
+| 14 | 2026-09-20 | 73b29bf | Caso 2: cambios importantes y servicios con Flexbox | Caso 2 | Avisos destacados y seis servicios que se acomodan con flex-wrap |
+| 15 | 2026-09-20 | 563f3ae | Caso 2: sección de información general | Caso 2 | Bloque de información general completo en la versión de teléfono |
+| 16 | 2026-09-20 | 8a0d626 | Caso 2: media query de tableta | Caso 2 | min-width: 601px con Ahora y escenarios en dos columnas |
+| 17 | 2026-09-20 | b7af271 | Caso 2: CSS Grid para comparar escenarios en escritorio | Caso 2 | min-width: 1024px reorganiza el panel y coloca los escenarios lado a lado |
+| 18 | 2026-09-20 | fc34126 | Documentar decisiones de diseño en el README | Ambos | Respuestas a los aspectos que el estudiante debe poder explicar |
