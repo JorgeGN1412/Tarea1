@@ -147,10 +147,10 @@ por todo el CSS.
 
 Tabla generada con `git log --date=short --pretty=format:"| %ad | %h | %s |"`
 y completada con las columnas de caso y cambio principal.
+> **Nota:** `git log` muestra más commits que esta tabla: los posteriores a la
+> fila 18 (agregar la tabla, eliminar un script auxiliar y correcciones finales).
+> El hash de un commit no existe hasta que se crea, por lo que no aparecen como filas.
 
-> **Nota:** `git log` muestra dos commits más que esta tabla: el que agrega
-> la tabla al README y el que elimina un script auxiliar. El hash de un commit
-> no existe hasta que se crea, por lo que no pueden aparecer como filas.
 
 | # | Fecha | Hash | Mensaje | Caso | Cambio |
 |---|-------|------|---------|------|--------|
