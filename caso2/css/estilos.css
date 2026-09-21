@@ -277,3 +277,39 @@ ul {
   }
 }
 
+/* =========================================================
+   ESCRITORIO — a partir de 1024px
+   Requerimiento: "Programación por escenarios" se resuelve
+   principalmente con CSS Grid, y en escritorio se ve más
+   programación simultánea.
+   ========================================================= */
+@media (min-width: 1024px) {
+  .panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "ahora      cambios"
+      "escenarios cambios"
+      "escenarios servicios"
+      "proximas   servicios"
+      "informacion informacion";
+    gap: var(--espaciado-md);
+  }
+
+  .ahora { grid-area: ahora; order: initial; }
+  .escenarios { grid-area: escenarios; order: initial; }
+  .cambios { grid-area: cambios; order: initial; }
+  .servicios { grid-area: servicios; order: initial; }
+  .proximas { grid-area: proximas; order: initial; }
+  .informacion { grid-area: informacion; order: initial; }
+
+  .ahora__lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .escenarios__lista {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
