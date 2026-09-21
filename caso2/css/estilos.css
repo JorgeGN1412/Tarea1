@@ -135,7 +135,7 @@ ul {
   border-left: 5px solid var(--color-principal);
   border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
   padding: var(--espaciado-sm);
-  padding-top: 1.6rem;
+  padding-top: 2rem;
 }
 
 .actividad-ahora__etiqueta {
