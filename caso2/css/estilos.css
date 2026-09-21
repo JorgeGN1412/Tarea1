@@ -1,0 +1,132 @@
+/* =========================================================
+   VARIABLES CSS (:root)
+   ========================================================= */
+:root {
+  --color-fondo: #fdf6ec;
+  --color-superficie: #ffffff;
+  --color-texto: #2c2318;
+  --color-texto-suave: #6b5d4d;
+  --color-principal: #c2410c;
+  --color-acento: #0f766e;
+  --color-borde: #ecdfcb;
+
+  --color-musica: #c2410c;
+  --color-teatro: #6d28d9;
+  --color-danza: #0f766e;
+  --color-gastronomia: #b45309;
+  --color-conferencia: #1d4ed8;
+  --color-infantil: #db2777;
+
+  --espaciado-xs: 0.4rem;
+  --espaciado-sm: 0.75rem;
+  --espaciado-md: 1.25rem;
+  --espaciado-lg: 2rem;
+
+  --radio-sm: 6px;
+  --radio-md: 12px;
+}
+
+/* =========================================================
+   BASE — MOBILE-FIRST (320px–600px es el punto de partida)
+   ========================================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin: 0 0 var(--espaciado-xs) 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Encabezado ---------- */
+.cabecera {
+  background-color: var(--color-principal);
+  color: #fff;
+  padding: var(--espaciado-md);
+}
+
+.cabecera h1 {
+  font-size: 1.2rem;
+}
+
+.cabecera__meta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ffe3d1;
+}
+
+/* ---------- Navegación: Flexbox + sticky en teléfono ---------- */
+.nav-principal {
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-principal__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-xs);
+  padding: var(--espaciado-sm) var(--espaciado-md);
+}
+
+.nav-principal__lista a {
+  text-decoration: none;
+  color: var(--color-principal);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: var(--espaciado-xs) var(--espaciado-sm);
+  border-radius: var(--radio-sm);
+}
+
+.nav-principal__lista a:hover,
+.nav-principal__lista a:focus {
+  background-color: var(--color-fondo);
+}
+
+/* ---------- Panel: en teléfono, prioridad = Ahora primero ---------- */
+.panel {
+  padding: var(--espaciado-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-md);
+}
+
+.tarjeta {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-md);
+  padding: var(--espaciado-md);
+}
+
+/* En móvil, "Ahora" va primero visualmente aunque en el HTML
+   ya está primero; en escritorio se reordena con order (Flexbox) */
+.ahora { order: 1; }
+.proximas { order: 2; }
+.cambios { order: 3; }
+.servicios { order: 4; }
+.escenarios { order: 5; }
+.informacion { order: 6; }
+
+/* ---------- Pie ---------- */
+.pie {
+  text-align: center;
+  padding: var(--espaciado-md);
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
