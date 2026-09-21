@@ -303,6 +303,29 @@ a {
 .alerta--media { border-left-color: var(--color-media); }
 .alerta--informativa { border-left-color: var(--color-informativa); }
 
+/* ---------- Agenda ---------- */
+.agenda__lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+}
+
+.agenda__lista li {
+  display: flex;
+  gap: var(--espaciado-sm);
+  font-size: 0.9rem;
+  border-bottom: 1px dashed var(--color-borde);
+  padding-bottom: var(--espaciado-xs);
+}
+
+.agenda__hora {
+  font-weight: 700;
+  color: var(--color-principal);
+  min-width: 3.2rem;
+}
+
 /* ---------- Pie ---------- */
 .pie {
   text-align: center;
