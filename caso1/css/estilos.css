@@ -334,3 +334,21 @@ a {
   color: var(--color-texto-suave);
 }
 
+/* =========================================================
+   TABLETA — a partir de 601px, dos columnas
+   ========================================================= */
+@media (min-width: 601px) {
+  .indicador {
+    flex-basis: 22%;
+  }
+  .indicador--grande {
+    flex-basis: 100%;
+  }
+
+  .equipos__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+}
+
