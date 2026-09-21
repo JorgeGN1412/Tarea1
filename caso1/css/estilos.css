@@ -352,3 +352,38 @@ a {
   }
 }
 
+/* =========================================================
+   ESCRITORIO — a partir de 1024px, CSS Grid como estructura
+   principal del panel (requerimiento del Caso 1)
+   ========================================================= */
+@media (min-width: 1024px) {
+  .panel {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "resumen  alertas"
+      "misiones alertas"
+      "equipos  agenda";
+    gap: var(--espaciado-md);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #resumen  { grid-area: resumen; }
+  #misiones { grid-area: misiones; }
+  #equipos  { grid-area: equipos; }
+  #alertas  { grid-area: alertas; }
+  #agenda   { grid-area: agenda; }
+
+  .indicadores__lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .indicador--grande {
+    grid-column: 1 / -1;
+  }
+
+  .equipos__lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
