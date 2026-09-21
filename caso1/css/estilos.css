@@ -61,3 +61,83 @@ a {
   color: var(--color-principal);
 }
 
+/* =========================================================
+   ENCABEZADO — Flexbox + position: sticky
+   ========================================================= */
+.cabecera {
+  background-color: var(--color-principal);
+  color: #fff;
+  padding: var(--espaciado-md) var(--espaciado-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-xs);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabecera__titulo h1 {
+  font-size: 1.25rem;
+}
+
+.cabecera__meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #d7ece5;
+}
+
+.estado-general {
+  display: flex;
+  align-items: center;
+  gap: var(--espaciado-xs);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.estado-general__punto {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #7be6b8;
+  display: inline-block;
+}
+
+/* =========================================================
+   NAVEGACIÓN — Flexbox, envuelve en pantallas pequeñas
+   ========================================================= */
+.nav-principal {
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.nav-principal__lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-sm);
+  padding: var(--espaciado-sm) var(--espaciado-md);
+  margin: 0;
+}
+
+.nav-principal__lista a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: var(--espaciado-xs) var(--espaciado-sm);
+  border-radius: var(--radio-sm);
+}
+
+.nav-principal__lista a:hover,
+.nav-principal__lista a:focus {
+  background-color: var(--color-fondo);
+}
+
+/* ---------- Pie ---------- */
+.pie {
+  text-align: center;
+  padding: var(--espaciado-md);
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
