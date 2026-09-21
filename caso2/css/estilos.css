@@ -194,6 +194,28 @@ ul {
 .categoria--conferencia { background-color: var(--color-conferencia); }
 .categoria--infantil { background-color: var(--color-infantil); }
 
+/* ---------- Escenarios: en móvil, columna simple ---------- */
+.escenarios__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.escenario {
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  padding: var(--espaciado-sm);
+}
+
+.escenario ul {
+  margin-top: var(--espaciado-xs);
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
 /* ---------- Pie ---------- */
 .pie {
   text-align: center;
