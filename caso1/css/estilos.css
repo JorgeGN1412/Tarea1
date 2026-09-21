@@ -1,0 +1,63 @@
+/* =========================================================
+   VARIABLES CSS (:root)
+   ========================================================= */
+:root {
+  --color-fondo: #f4f6f5;
+  --color-superficie: #ffffff;
+  --color-texto: #1c2b26;
+  --color-texto-suave: #566b64;
+  --color-principal: #1f5c4c;
+  --color-principal-claro: #2e8a6f;
+  --color-borde: #dbe4e0;
+
+  --color-critica: #b3261e;
+  --color-alta: #c76b1c;
+  --color-media: #b98a06;
+  --color-baja: #2e8a6f;
+  --color-informativa: #3a6ea5;
+
+  --espaciado-xs: 0.4rem;
+  --espaciado-sm: 0.75rem;
+  --espaciado-md: 1.25rem;
+  --espaciado-lg: 2rem;
+
+  --radio-sm: 6px;
+  --radio-md: 12px;
+}
+
+/* =========================================================
+   BASE / RESET LIGERO — enfoque MOBILE-FIRST
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0 0 var(--espaciado-xs) 0;
+  line-height: 1.2;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+a {
+  color: var(--color-principal);
+}
+
