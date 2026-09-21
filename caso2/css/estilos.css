@@ -122,6 +122,78 @@ ul {
 .escenarios { order: 5; }
 .informacion { order: 6; }
 
+/* ---------- Sección Ahora: la más importante en móvil ---------- */
+.ahora__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.actividad-ahora {
+  position: relative;
+  background-color: var(--color-fondo);
+  border-left: 5px solid var(--color-principal);
+  border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
+  padding: var(--espaciado-sm);
+  padding-top: 1.6rem;
+}
+
+.actividad-ahora__etiqueta {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  background-color: var(--color-principal);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.actividad-ahora h3 {
+  font-size: 1rem;
+}
+
+.actividad-ahora__detalle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+/* ---------- Próximas actividades ---------- */
+.proximas__lista li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaciado-xs);
+  font-size: 0.9rem;
+  padding: var(--espaciado-xs) 0;
+  border-bottom: 1px dashed var(--color-borde);
+}
+
+.proximas__hora {
+  font-weight: 700;
+  color: var(--color-principal);
+  min-width: 3rem;
+}
+
+.categoria {
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.categoria--musica { background-color: var(--color-musica); }
+.categoria--teatro { background-color: var(--color-teatro); }
+.categoria--danza { background-color: var(--color-danza); }
+.categoria--gastronomia { background-color: var(--color-gastronomia); }
+.categoria--conferencia { background-color: var(--color-conferencia); }
+.categoria--infantil { background-color: var(--color-infantil); }
+
 /* ---------- Pie ---------- */
 .pie {
   text-align: center;
