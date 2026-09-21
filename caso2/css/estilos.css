@@ -260,3 +260,20 @@ ul {
   color: var(--color-texto-suave);
 }
 
+/* =========================================================
+   TABLETA — 601px a 1024px
+   ========================================================= */
+@media (min-width: 601px) {
+  .ahora__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+
+  .escenarios__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaciado-sm);
+  }
+}
+
