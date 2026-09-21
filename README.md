@@ -148,9 +148,9 @@ por todo el CSS.
 Tabla generada con `git log --date=short --pretty=format:"| %ad | %h | %s |"`
 y completada con las columnas de caso y cambio principal.
 
-> **Nota:** el último commit del repositorio es el que agrega esta tabla al
-> README. Su hash no existe hasta que se crea el commit, por lo que ese commit
-> no aparece como fila; `git log` muestra un commit más que esta tabla.
+> **Nota:** `git log` muestra dos commits más que esta tabla: el que agrega
+> la tabla al README y el que elimina un script auxiliar. El hash de un commit
+> no existe hasta que se crea, por lo que no pueden aparecer como filas.
 
 | # | Fecha | Hash | Mensaje | Caso | Cambio |
 |---|-------|------|---------|------|--------|
