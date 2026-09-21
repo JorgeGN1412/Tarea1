@@ -133,6 +133,124 @@ a {
   background-color: var(--color-fondo);
 }
 
+/* =========================================================
+   PANEL PRINCIPAL — en móvil, una columna simple
+   ========================================================= */
+.panel {
+  padding: var(--espaciado-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-md);
+}
+
+.tarjeta {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-md);
+  padding: var(--espaciado-md);
+}
+
+/* ---------- Indicadores (Flexbox, tamaños distintos) ---------- */
+.indicadores__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaciado-sm);
+}
+
+.indicador {
+  flex: 1 1 40%;
+  background-color: var(--color-fondo);
+  border-radius: var(--radio-sm);
+  padding: var(--espaciado-sm);
+  text-align: center;
+}
+
+.indicador--grande {
+  flex-basis: 100%;
+  padding: var(--espaciado-md);
+}
+
+.indicador--grande .indicador__valor {
+  font-size: 2rem;
+}
+
+.indicador--alerta {
+  border: 1px solid var(--color-critica);
+}
+
+.indicador__valor {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-principal);
+}
+
+.indicador__etiqueta {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+/* ---------- Misiones ---------- */
+.misiones__lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.mision {
+  position: relative; /* contenedor para la etiqueta absoluta */
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  padding: var(--espaciado-sm);
+  padding-top: var(--espaciado-lg);
+}
+
+.mision__etiqueta {
+  position: absolute;
+  top: var(--espaciado-xs);
+  right: var(--espaciado-xs);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.mision__etiqueta--prioridad-alta { background-color: var(--color-critica); }
+.mision__etiqueta--prioridad-media { background-color: var(--color-media); }
+.mision__etiqueta--prioridad-baja { background-color: var(--color-baja); }
+
+.mision__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--espaciado-xs);
+}
+
+.mision__encabezado h3 {
+  font-size: 1rem;
+}
+
+.mision__estado {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mision__estado--progreso { color: var(--color-principal-claro); }
+.mision__estado--pendiente { color: var(--color-media); }
+.mision__estado--suspendida { color: var(--color-critica); }
+.mision__estado--completada { color: var(--color-texto-suave); }
+
+.mision__detalle {
+  margin: var(--espaciado-xs) 0 0 0;
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+}
+
 /* ---------- Pie ---------- */
 .pie {
   text-align: center;

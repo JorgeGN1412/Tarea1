@@ -30,6 +30,81 @@
   </nav>
 
   <main class="panel">
+
+    <section id="resumen" class="tarjeta indicadores" aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen de operaciones</h2>
+      <div class="indicadores__lista">
+        <article class="indicador indicador--grande">
+          <p class="indicador__valor">12</p>
+          <p class="indicador__etiqueta">Investigadores activos</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador__valor">5</p>
+          <p class="indicador__etiqueta">Misiones en progreso</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador__valor">8</p>
+          <p class="indicador__etiqueta">Misiones completadas</p>
+        </article>
+        <article class="indicador indicador--alerta">
+          <p class="indicador__valor">3</p>
+          <p class="indicador__etiqueta">Alertas pendientes</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="misiones" class="tarjeta misiones" aria-labelledby="misiones-titulo">
+      <h2 id="misiones-titulo">Misiones activas</h2>
+      <div class="misiones__lista">
+
+        <article class="mision">
+          <div class="mision__etiqueta mision__etiqueta--prioridad-alta">Prioridad alta</div>
+          <div class="mision__encabezado">
+            <h3>Monitoreo de anfibios</h3>
+            <p class="mision__estado mision__estado--progreso">▶ En progreso</p>
+          </div>
+          <p class="mision__detalle">Equipo Biología · Sendero Norte · 08:30–11:30</p>
+        </article>
+
+        <article class="mision">
+          <div class="mision__etiqueta mision__etiqueta--prioridad-media">Prioridad media</div>
+          <div class="mision__encabezado">
+            <h3>Muestreo de calidad de agua</h3>
+            <p class="mision__estado mision__estado--pendiente">⏸ Pendiente</p>
+          </div>
+          <p class="mision__detalle">Equipo Hidrología · Río Guacimal · 09:00–10:30</p>
+        </article>
+
+        <article class="mision">
+          <div class="mision__etiqueta mision__etiqueta--prioridad-alta">Prioridad alta</div>
+          <div class="mision__encabezado">
+            <h3>Registro de estación meteorológica</h3>
+            <p class="mision__estado mision__estado--suspendida">■ Suspendida</p>
+          </div>
+          <p class="mision__detalle">Equipo Meteorología · Torre Central · 07:00–08:00</p>
+        </article>
+
+        <article class="mision">
+          <div class="mision__etiqueta mision__etiqueta--prioridad-baja">Prioridad baja</div>
+          <div class="mision__encabezado">
+            <h3>Levantamiento de muestras de suelo</h3>
+            <p class="mision__estado mision__estado--completada">✔ Completada</p>
+          </div>
+          <p class="mision__detalle">Equipo Geología · Ladera Sur · 06:30–09:00</p>
+        </article>
+
+        <article class="mision">
+          <div class="mision__etiqueta mision__etiqueta--prioridad-media">Prioridad media</div>
+          <div class="mision__encabezado">
+            <h3>Conteo de aves migratorias</h3>
+            <p class="mision__estado mision__estado--progreso">▶ En progreso</p>
+          </div>
+          <p class="mision__detalle">Equipo Biología · Mirador Este · 10:00–12:00</p>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
   <footer class="pie">
